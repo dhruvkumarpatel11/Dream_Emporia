@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:autofillHints="Book name"
+    android:background="#FAE0DC"
+    tools:context=".checkout_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/orderdetail"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="#FA6C2804"
+                android:backgroundTint="#FA6C2804"
+                android:text=" Order Details"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="409dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="50dp"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="409dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/editTextTextPostalAddress"
+                android:layout_width="409dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Order Quantity"
+                android:inputType="textPostalAddress"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="409dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/poption"
+                style="bold"
+                android:layout_width="409dp"
+                android:layout_height="41dp"
+
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:text="Payment Options:"
+                android:textColor="#1B1919"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="409dp"
+                android:layout_height="134dp">
+
+                <RadioButton
+                    android:id="@+id/creditcard"
+                    android:layout_width="409dp"
+                    android:layout_height="41dp"
+                    android:height="409dp"
+                    android:text="Credit Card"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteX="75dp"
+                    tools:layout_editor_absoluteY="424dp"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/debitcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Debit Card"
+                    tools:layout_editor_absoluteX="57dp"
+                    tools:layout_editor_absoluteY="472dp" />
+
+                <RadioButton
+                    android:id="@+id/cashpay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash Payment"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="534dp" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Credit Card Number"
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CVV"
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="date"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="201dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#FA6C2804"
+                android:text="Buy"
+                app:cornerRadius="25dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextNumber"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_marginBottom="30dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Card Number"-->
+    <!--        android:inputType="number"-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/button"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />-->
+
+
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:layout_editor_absoluteY="334dp"-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/poption"-->
+    <!--        android:layout_width="198dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:text="Payment Options:"-->
+    <!--        tools:layout_editor_absoluteX="106dp"-->
+    <!--        tools:layout_editor_absoluteY="340dp" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
